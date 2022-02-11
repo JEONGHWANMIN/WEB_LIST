@@ -169,13 +169,64 @@ header nav a:hover {
     width: 60rem;
     height: 60rem;
 }
-
-
-
 /* Tour section ends */
 
+/* Eating Section Starts */
 
+.Eating-contaienr{
+ margin: 8rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
 
+.Eating .Eating-contaienr .Eating-titles {
+    text-align: center;
+}   
+
+.Eating .Eating-contaienr .Eating-titles h1 {
+    color: #333;
+    font-size: 5rem;
+}
+
+.Eating .Eating-contaienr .Eating-titles span {
+    color: green;
+    font-size: 6rem;
+}
+
+.Eating .Eating-contaienr .Eating-titles p {
+    color: #444;
+    font-size: 2rem;
+}
+
+.Eating .hr {
+    text-align: center;
+    height: 3rem;
+    background-color: cornsilk;
+    margin: 8rem;
+}
+
+.Eating .five-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+/* Eating Section ends */
+
+/* footer section starts */
+footer {
+    background-color:cornsilk ;
+}
+
+footer .inform {
+    font-weight: bold;
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+}
+/* footer section ends */
 
 
 
@@ -196,7 +247,7 @@ header nav a:hover {
 @media screen and (max-width: 860px) {
 
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 
     header {
@@ -230,6 +281,11 @@ header nav a:hover {
         width: 30rem;
         height: 30rem;
     }
+
+    .Eating .Eating-contaienr  {
+        flex-direction: column;
+    }
+    
 
 }
 
