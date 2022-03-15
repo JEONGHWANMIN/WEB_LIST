@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&family=Nanum+Pen+Script&family=Nunito+Sans:wght@700&family=Ubuntu&display=swap');
+
+:root {
+  --color-gray: #999;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+
+/* modal header */
+
+.modal .modal-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.modal .modal-header h3 {
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 450;
+}
+
+.modal .modal-header img {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  padding-right: 30px;
+  font-size: 24px;
+  padding-bottom: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+/* modal-main */
+
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+
+.modal-main .login-status-container {
+  display: flex;
+  align-items: center;
+}
+
+.modal-main h2 {
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: 350;
+  letter-spacing: 2px;
+  height: 18px;
+}
+
+.modal-main .login-status-container img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.modal-main .login-status-container p {
+  margin-left: 10px;
+  font-size: 22px;
+  color: var(--color-gray);
+}
+
+.modal-main .signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-main .main-button {
+  height: 80px;
+  border: none;
+  background-color: #3574f2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+.modal-main .signin p {
+  font-size: 22px;
+  color: var(--color-gray);
+}
+
+.modal-main .signin a {
+  color: var(--color-gray);
+  padding: 12px;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.modal-main .hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-main .hr-container .hr-bar {
+  background-color: var(--color-gray);
+  width: 80%;
+  border: 1px solid #dee2e6;
+}
+
+.modal-main .hr-container p {
+  color: var(--color-gray);
+  width: 20%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-main .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 330px;
+}
+
+.modal-main .button-container button {
+  margin: 10px;
+  height: 130px;
+  text-align: center;
+  color: var(--color-gray);
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Social Button Customizing */
+
+.modal-main .button-container .google-button {
+  border: solid 1.5px var(--color-gray);
+  position: relative;
+}
+
+.modal-main .button-container .google-button::before {
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+  margin-top: 5px;
+  transform: translateY(50%);
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('./JHM_LION_img/icon_google.png');
+  background-size: contain;
+}
+
+.modal-main .button-container .facebook-button {
+  border: solid 1.5px #3574f2;
+  position: relative;
+}
+
+.modal-main .button-container .facebook-button::before {
+  top: 0;
+  left: 0;
+  margin-left: 18px;
+  margin-top: 5px;
+  transform: translateY(50%);
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('./JHM_LION_img/icon_facebook.png') no-repeat;
+  background-size: contain;
+}
+
+.modal-main .button-container .naver-button {
+  border: solid 1.5px #09ce20;
+  position: relative;
+}
+
+.modal-main .button-container .naver-button::before {
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 5px;
+  transform: translateY(50%);
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('./JHM_LION_img/icon_naver.png') no-repeat;
+  background-size: contain;
+}
+
+.modal-main .button-container .kakao-button {
+  border: solid 1.5px #fee500;
+  position: relative;
+}
+
+.modal-main .button-container .kakao-button::before {
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 5px;
+  transform: translateY(50%);
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('./JHM_LION_img/icon_kakao.png') no-repeat;
+  background-size: contain;
+}
